@@ -205,6 +205,15 @@
           },
           '-=.5'
         )
+        .from(
+          '.text h5',
+          {
+            opacity: 0,
+            duration: 1,
+            y: 50
+          },
+          '-=.5'
+        )
         .to('.content', {
           y: '90px'
         })
@@ -212,7 +221,7 @@
       const tl_header = gsap
         .timeline({ ease: 'Power1.easeInOut' })
         .from('header', {
-          delay: 4.5,
+          delay: 2.5,
           duration: 1,
           y: -90
         })
